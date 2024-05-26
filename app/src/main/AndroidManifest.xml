@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sapernewvers">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_game"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".loginMenu.PlayerNameActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainMenuActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activity.DifficultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.GameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.GameOverActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.GameWinActivity"
+            android:exported="true" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
